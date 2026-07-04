@@ -5,14 +5,20 @@ function ToBuy() {
   const [items, setItems] = useState([
     {
       id: 1,
-      name: "Tomatoes",
-      quantity: "1 kg",
+      name: "Trash bags",
+      quantity: "1",
     },
     {
       id: 2,
-      name: "Tofu",
-      quantity: "2 packs",
+      name: "kukident",
+      quantity: "1",
     },
+    {
+      id: 3,
+      name: "blatterteig",
+      quantity: "2 rolls",
+    },
+
   ]);
 
   const [searchText, setSearchText] = useState("");
