@@ -1,0 +1,13 @@
+.grocery-table {
+  width: auto;   /* <-- IMPORTANT: table shrinks to content */
+  display: inline-table; 
+  border-collapse: collapse; /* Removes double borders */
+  border: 3px solid black;   /* Outer border of the table */
+}
+
+.grocery-table th,
+.grocery-table td {
+  border: 2px solid black;   /* Inner cell borders */
+  padding: 10px;
+  text-align: left;
+}

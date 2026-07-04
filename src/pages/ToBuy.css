@@ -1,0 +1,126 @@
+.tobuy-page {
+  min-height: 100vh;
+  padding: 40px;
+  background: #f4f6f8;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+.tobuy-page h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #1f2937;
+}
+
+.top-actions {
+  width: 100%;
+  margin: 0 0 20px;
+  display: flex;
+  gap: 16px;
+  justify-content: space-between;
+}
+
+.search-input {
+  flex: 1;
+  padding: 12px 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.tobuy-form {
+  width: 100%;
+  margin: 0 0 30px;
+  display: grid;
+  grid-template-columns: 2fr 1fr auto auto;
+  gap: 14px;
+  background: white;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  box-sizing: border-box;
+}
+
+.tobuy-form input {
+  padding: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+.add-btn,
+.delete-btn,
+.edit-btn,
+.cancel-btn {
+  border: none;
+  border-radius: 10px;
+  padding: 12px 16px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.add-btn {
+  background: #2563eb;
+  color: white;
+}
+
+.delete-btn {
+  background: #dc2626;
+  color: white;
+}
+
+.edit-btn {
+  background: #f59e0b;
+  color: white;
+}
+
+.cancel-btn {
+  background: #6b7280;
+  color: white;
+}
+
+.tobuy-table {
+  width: 100%;
+  margin: 0;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.tobuy-table th,
+.tobuy-table td {
+  border: 1px solid #d1d5db;
+  padding: 14px;
+  text-align: left;
+}
+
+.tobuy-table th {
+  background: #1f2937;
+  color: white;
+}
+
+.selected-row {
+  background: #dbeafe;
+}
+
+.empty-message {
+  text-align: center;
+  color: #6b7280;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .top-actions {
+    flex-direction: column;
+  }
+
+  .tobuy-form {
+    grid-template-columns: 1fr;
+  }
+
+  .tobuy-table {
+    font-size: 14px;
+  }
+}
